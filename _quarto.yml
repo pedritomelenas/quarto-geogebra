@@ -1,0 +1,27 @@
+project:
+  type: website
+  resources: 
+    - "*.ggb"  
+website:
+  title: "Ejemplo quarto MD"
+  favicon: favicon.png
+  search: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+  sidebar: 
+    style: "docked"
+    logo: logo-md.png
+    footer: Hecho con [Quarto](https://quarto.org/)
+    contents:
+      - plantilla.md
+
+format:
+  html:
+    theme: journal
+    css: styles.css
+    toc: true
+
+
+
