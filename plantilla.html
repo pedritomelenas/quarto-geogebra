@@ -117,6 +117,12 @@ window.Quarto = {
  <span class="menu-text">Plantilla ejemplo</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./otro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Otra página</span></a>
+  </div>
+</li>
     </ul>
     </div>
 <div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
@@ -125,14 +131,7 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
-   
-  <ul>
-  <li><a href="#ejemplo-geogebra" id="toc-ejemplo-geogebra" class="nav-link active" data-scroll-target="#ejemplo-geogebra">Ejemplo GeoGebra</a></li>
-  </ul>
-</nav>
-    </div>
+    <div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="plantilla.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <!--Sagecell-->
@@ -200,9 +199,10 @@ Tip
 <p>Se considera ahora un <span class="math inline">\(K_6\)</span>, que tiene un total de 15 aristas. Si se colorean las aristas con rojo o verde dependiendo de si las personas representadas por los vértices incidentes son conocidas o desconocidas entre sí, respectivamente, el <strong>teorema de la amistad</strong> establece lo siguiente:</p>
 <p>Independientemente de cómo se coloreen las aristas de <span class="math inline">\(K_6\)</span> con rojo o verde, siempre habrá un triángulo rojo, es decir, un conjunto de tres personas que son mutuamente desconocidas, o un triángulo verde, que representa tres personas que se conocen entre sí.</p>
 <p><strong>Demostración</strong></p>
-<p>Se elige uno de los vértices <span class="math inline">\(P\)</span>. Se encuentran 5 aristas incidentes sobre <span class="math inline">\(P\)</span>, cada una coloreada con color rojo (desconocidos) o verde (conocidos). Se aplica el <strong>Principio del Palomar</strong> que afirma que, al menos, 3 aristas son del mismo color. Sean <span class="math inline">\(A,B,C\)</span> los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas <span class="math inline">\(AB,AC,BC\)</span> es roja, junto a las aristas incidentes sobre <span class="math inline">\(P\)</span> se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde <span class="math inline">\(ABC\)</span> (personas mutuamente conocidas).</p>
+<p>Se elige uno de los vértices <span class="math inline">\(P\)</span>. Se encuentran 5 aristas incidentes sobre <span class="math inline">\(P\)</span>, cada una coloreada con color rojo (desconocidos) o verde (conocidos). Se aplica el <strong>Principio del Palomar</strong> que afirma que, al menos, 3 aristas son del mismo color.</p>
 <p><img src="assets/Imagen1.svg" class="img-fluid"></p>
 <p><img src="assets/Teorema_amistad_2.svg" class="img-fluid"></p>
+<p>Sean <span class="math inline">\(A,B,C\)</span> los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas <span class="math inline">\(AB,AC,BC\)</span> es roja, junto a las aristas incidentes sobre <span class="math inline">\(P\)</span> se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde <span class="math inline">\(ABC\)</span> (personas mutuamente conocidas).</p>
 <p><img src="assets/imagen3.svg" class="img-fluid"></p>
 <p><img src="assets/Imagen4.svg" class="img-fluid"></p>
 <div id="ggbApplet">
@@ -217,7 +217,7 @@ var parameters = {
 // "material_id":12345,
 // "ggbBase64":"",
 // use this instead of ggbBase64 to load a .ggb file
-"filename":"/assets/geogebra/hueso-nazari-tesela.ggb"};
+"filename":"assets/geogebra/hueso-nazari-tesela.ggb"};
 // is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, PV=Python, macro=Macro View
 var views = {'is3D': 0,'AV': 1,'SV': 1,'CV': 1,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
 var applet = new GGBApplet(parameters, '5.0',views); //poner views como tercer argumento si queremos habilitarlo
@@ -311,7 +311,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/pedritomelenas\.github\.io\/quarto-geogebra\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

@@ -1,0 +1,1 @@
+Sitemap: https://pedritomelenas.github.io/quarto-geogebra/sitemap.xml
