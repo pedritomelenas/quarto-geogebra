@@ -1,0 +1,36 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "plantilla.html",
+    "href": "plantilla.html",
+    "title": "Plantilla ejemplo",
+    "section": "",
+    "text": "Teorema 1 En cualquier grupo de seis personas existen siempre tres que se conocen mutuamante, o que se desconocen entre sí.\n\n\n\n\n\n\n\nNota\n\n\n\nEs útil abordar este problema con la terminología de grafos. Se considera un grafo con 6 vértices, donde cada vértice es una persona distinta, y los segmentos que los unen son las relaciones entre ellos. A este tipo de grafo se le conoce como grafo completo. En particular, cuando un grafo tiene \\(n\\) vértices y cada par de vértices está conectado, se le denota como \\(K_n\\).\n\n\n\n\n\n\n\n\nTip\n\n\n\nPor ejemplo, un grafo completo de 3 vértices se representa como \\(K_3\\), o como un ciclo de longitud 3 \\(C_3\\), conocido como triángulo.\n\n\nSe considera ahora un \\(K_6\\), que tiene un total de 15 aristas. Si se colorean las aristas con rojo o verde dependiendo de si las personas representadas por los vértices incidentes son conocidas o desconocidas entre sí, respectivamente, el teorema de la amistad establece lo siguiente:\nIndependientemente de cómo se coloreen las aristas de \\(K_6\\) con rojo o verde, siempre habrá un triángulo rojo, es decir, un conjunto de tres personas que son mutuamente desconocidas, o un triángulo verde, que representa tres personas que se conocen entre sí.\nDemostración\nSe elige uno de los vértices \\(P\\). Se encuentran 5 aristas incidentes sobre \\(P\\), cada una coloreada con color rojo (desconocidos) o verde (conocidos). Se aplica el Principio del Palomar que afirma que, al menos, 3 aristas son del mismo color. Sean \\(A,B,C\\) los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas \\(AB,AC,BC\\) es roja, junto a las aristas incidentes sobre \\(P\\) se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde \\(ABC\\) (personas mutuamente conocidas).",
+    "crumbs": [
+      "Plantilla ejemplo"
+    ]
+  },
+  {
+    "objectID": "plantilla.html#ejemplo-geogebra",
+    "href": "plantilla.html#ejemplo-geogebra",
+    "title": "Plantilla ejemplo",
+    "section": "",
+    "text": "Teorema 1 En cualquier grupo de seis personas existen siempre tres que se conocen mutuamante, o que se desconocen entre sí.\n\n\n\n\n\n\n\nNota\n\n\n\nEs útil abordar este problema con la terminología de grafos. Se considera un grafo con 6 vértices, donde cada vértice es una persona distinta, y los segmentos que los unen son las relaciones entre ellos. A este tipo de grafo se le conoce como grafo completo. En particular, cuando un grafo tiene \\(n\\) vértices y cada par de vértices está conectado, se le denota como \\(K_n\\).\n\n\n\n\n\n\n\n\nTip\n\n\n\nPor ejemplo, un grafo completo de 3 vértices se representa como \\(K_3\\), o como un ciclo de longitud 3 \\(C_3\\), conocido como triángulo.\n\n\nSe considera ahora un \\(K_6\\), que tiene un total de 15 aristas. Si se colorean las aristas con rojo o verde dependiendo de si las personas representadas por los vértices incidentes son conocidas o desconocidas entre sí, respectivamente, el teorema de la amistad establece lo siguiente:\nIndependientemente de cómo se coloreen las aristas de \\(K_6\\) con rojo o verde, siempre habrá un triángulo rojo, es decir, un conjunto de tres personas que son mutuamente desconocidas, o un triángulo verde, que representa tres personas que se conocen entre sí.\nDemostración\nSe elige uno de los vértices \\(P\\). Se encuentran 5 aristas incidentes sobre \\(P\\), cada una coloreada con color rojo (desconocidos) o verde (conocidos). Se aplica el Principio del Palomar que afirma que, al menos, 3 aristas son del mismo color. Sean \\(A,B,C\\) los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas \\(AB,AC,BC\\) es roja, junto a las aristas incidentes sobre \\(P\\) se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde \\(ABC\\) (personas mutuamente conocidas).",
+    "crumbs": [
+      "Plantilla ejemplo"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ejemplo Quarto Geogebra",
+    "section": "",
+    "text": "Algo de texto por aquí"
+  }
+]

@@ -1,0 +1,15 @@
+/* css styles */
+
+.katex { 
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-size: 1em !important; 
+} 
+ 
+.MathJax { 
+  font-size: 1em !important; 
+}
+.MathJax_Display{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
