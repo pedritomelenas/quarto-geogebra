@@ -42,7 +42,6 @@ Independientemente de cómo se coloreen las aristas de $K_6$ con rojo o verde, s
 **Demostración**
 
 Se elige uno de los vértices $P$. Se encuentran 5 aristas incidentes sobre $P$, cada una coloreada con color rojo (desconocidos) o verde (conocidos). Se aplica el **Principio del Palomar** que afirma que, al menos, 3 aristas son del mismo color.
-Sean $A,B,C$ los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas $AB,AC,BC$ es roja, junto a las aristas incidentes sobre $P$ se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde $ABC$ (personas mutuamente conocidas).
 
 ![](assets/Imagen1.svg)
 
@@ -51,6 +50,7 @@ Sean $A,B,C$ los otros vértices de estas 3 aristas del mismo color, supongamos 
 
 ![](assets/Teorema_amistad_2.svg)
 
+Sean $A,B,C$ los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas $AB,AC,BC$ es roja, junto a las aristas incidentes sobre $P$ se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde $ABC$ (personas mutuamente conocidas).
 
 
 
