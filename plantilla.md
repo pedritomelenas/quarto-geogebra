@@ -3,7 +3,7 @@ title: Plantilla ejemplo
 lang: es
 format:
    html:
-      toc: true
+      toc: false
       html-math-method: mathjax
       css: styles.css
       include-before-body: includes-header.html
