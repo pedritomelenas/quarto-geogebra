@@ -12,6 +12,8 @@ format:
 
 ## Ejemplo GeoGebra
 
+Yo puedo escribir aquí lo que me venga en gana.
+
 <div id="ggbApplet"></div>
 
 
