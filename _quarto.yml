@@ -6,10 +6,6 @@ website:
   title: "Ejemplo quarto MD"
   favicon: favicon.png
   search: false
-  navbar:
-    left:
-      - href: index.qmd
-        text: Inicio
   sidebar: 
     style: "docked"
     logo: logo-md.png
