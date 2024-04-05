@@ -1,6 +1,10 @@
 ---
 title: Plantilla ejemplo
 lang: es
+language:
+    es: 
+        title-block-author-single: "Autores"
+author: La clase de Matemáticas Dinámicas
 format:
    html:
       toc: false
@@ -9,14 +13,11 @@ format:
       include-before-body: includes-header.html
 ---
 
+Queremos probar el siguiente enunciado, conocido como el *teorema de la amistad*.
 
-## Ejemplo GeoGebra
+>En cualquier grupo de seis personas existen siempre tres que se conocen mutuamante, o que se desconocen entre sí.
 
-::: {#thm-seis-desconocidos}
 
-En cualquier grupo de seis personas existen siempre tres que se conocen mutuamante, o que se desconocen entre sí.
-
-:::
 
 
 ::: {.callout-note}
@@ -32,34 +33,45 @@ Por ejemplo, un grafo completo de 3 vértices se representa como $K_3$, o como u
 
 :::
 
-Se considera ahora un $K_6$, que tiene un total de 15 aristas. Si se colorean las aristas con rojo o verde dependiendo de si las personas representadas por los vértices incidentes son conocidas o desconocidas entre sí, respectivamente, el **teorema de la amistad** establece lo siguiente:
+
+Se considera ahora un $K_6$, que tiene un total de 15 aristas. Si se colorean las aristas con rojo o verde dependiendo de si las personas representadas por los vértices incidentes son conocidas o desconocidas entre sí, respectivamente, el *teorema de la amistad* establece lo siguiente:
+
+> Independientemente de cómo se coloreen las aristas de $K_6$ con rojo o verde, siempre habrá un triángulo rojo, es decir, un conjunto de tres personas que son mutuamente desconocidas, o un triángulo verde, que representa tres personas que se conocen entre sí.
 
 
-Independientemente de cómo se coloreen las aristas de $K_6$ con rojo o verde, siempre habrá un triángulo rojo, es decir, un conjunto de tres personas que son mutuamente desconocidas, o un triángulo verde, que representa tres personas que se conocen entre sí.
+::: {#thm-seis-desconocidos}
 
-
-
-**Demostración**
-
-Se elige uno de los vértices $P$. Se encuentran 5 aristas incidentes sobre $P$, cada una coloreada con color rojo (desconocidos) o verde (conocidos). Se aplica el **Principio del Palomar** que afirma que, al menos, 3 aristas son del mismo color.
-
-![](assets/Imagen1.svg)
-
+Cualquier coloración de $K_6$ con dos colores tiene al menos un  triángulo ($C_3$) cuyos lados son del mismo color.
+:::
 
 
 
-![](assets/Teorema_amistad_2.svg)
+::: {.proof}
 
-Sean $A,B,C$ los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas $AB,AC,BC$ es roja, junto a las aristas incidentes sobre $P$ se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde $ABC$ (personas mutuamente conocidas).
+Se elige uno de los vértices $P$ de $K_6$. Existen cinco aristas incidentes sobre $P$. 
+
+![](assets/Imagen1.svg){width=30%}
+
+Cada una de estas aristas está coloreada con color rojo (desconocidos) o verde (conocidos). Aplicamos el *Principio del Palomar* que nos asegura que, al menos, tres aristas son del mismo color.
+
+
+![](assets/Teorema_amistad_2.svg){width=30%}
+
+Sean $A,B,C$ los otros vértices opuestos a $P$ de estas tres aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas $AB,AC,BC$ es roja, junto a las aristas incidentes sobre $P$ se encuentra el triángulo rojo (personas desconocidas entre sí). 
+
+![](assets/Imagen4.svg){width=30%}
+
+
+Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde $ABC$ (personas mutuamente conocidas).
 
 
 
+![](assets/imagen3.svg){width=30%}
 
-![](assets/imagen3.svg)
+:::
 
 
-![](assets/Imagen4.svg)
-
+En la siguiente aplicación, pulsa "Recalcular" para colorear los lados de forma aleatoria en rojo y azul.
 
 <div id="ggbApplet"></div>
 
@@ -67,15 +79,15 @@ Sean $A,B,C$ los otros vértices de estas 3 aristas del mismo color, supongamos 
 <script>
 var parameters = {
 "id": "ggbApplet",
-"width":900,
-"height":702,
+"width":600,
+"height":500,
 // use this instead of ggbBase64 to load a material from geogebra.org
 // "material_id":12345,
 // "ggbBase64":"",
 // use this instead of ggbBase64 to load a .ggb file
-"filename":"/assets/geogebra/hueso-nazari-tesela.ggb"};
+"filename":"assets/conocidos-desconocidos.ggb"};
 // is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, PV=Python, macro=Macro View
-var views = {'is3D': 0,'AV': 1,'SV': 1,'CV': 1,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+var views = {'is3D': 0,'AV': 0,'SV': 1,'CV': 1,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
 var applet = new GGBApplet(parameters, '5.0',views); //poner views como tercer argumento si queremos habilitarlo
 window.onload = function() {
     applet.inject('ggbApplet')  
