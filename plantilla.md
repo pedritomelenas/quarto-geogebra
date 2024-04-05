@@ -48,14 +48,15 @@ Cualquier coloración de $K_6$ con dos colores tiene al menos un  triángulo ($C
 
 ::: {.proof}
 
-Se elige uno de los vértices $P$ de $K_6$. Existen cinco aristas incidentes sobre $P$. 
+Se elige uno de los vértices $P$ de $K_6$. Existen cinco aristas incidentes sobre $P$. Cada una de estas aristas está coloreada con color rojo (desconocidos) o verde (conocidos). Aplicamos el *Principio del Palomar* que nos asegura que, al menos, tres aristas son del mismo color.
 
-![](assets/Imagen1.svg){width=30%}
+::: {layout-ncol=2}
 
-Cada una de estas aristas está coloreada con color rojo (desconocidos) o verde (conocidos). Aplicamos el *Principio del Palomar* que nos asegura que, al menos, tres aristas son del mismo color.
+![](assets/Imagen1.svg){width=60%}
 
+![](assets/Teorema_amistad_2.svg){width=60%}
 
-![](assets/Teorema_amistad_2.svg){width=30%}
+:::
 
 Sean $A,B,C$ los otros vértices opuestos a $P$ de estas tres aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas $AB,AC,BC$ es roja, junto a las aristas incidentes sobre $P$ se encuentra el triángulo rojo (personas desconocidas entre sí). 
 
