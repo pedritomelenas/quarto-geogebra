@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="La clase de Matemáticas Dinámicas">
 
 <title>Ejemplo quarto MD - Plantilla ejemplo</title>
 <style>
@@ -85,7 +86,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -130,8 +131,7 @@ window.Quarto = {
 </div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="plantilla.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <!--Sagecell-->
@@ -155,6 +155,12 @@ window.Quarto = {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autores</div>
+    <div class="quarto-title-meta-contents">
+             <p>La clase de Matemáticas Dinámicas </p>
+          </div>
+  </div>
     
   
     
@@ -165,11 +171,10 @@ window.Quarto = {
 </header>
 
 
-<section id="ejemplo-geogebra" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-geogebra">Ejemplo GeoGebra</h2>
-<div id="thm-seis-desconocidos" class="theorem">
-<p><span class="theorem-title"><strong>Teorema 1</strong></span> En cualquier grupo de seis personas existen siempre tres que se conocen mutuamante, o que se desconocen entre sí.</p>
-</div>
+<p>Queremos probar el siguiente enunciado, conocido como el <em>teorema de la amistad</em>.</p>
+<blockquote class="blockquote">
+<p>En cualquier grupo de seis personas existen siempre tres que se conocen mutuamante, o que se desconocen entre sí.</p>
+</blockquote>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -196,30 +201,39 @@ Tip
 <p>Por ejemplo, un grafo completo de 3 vértices se representa como <span class="math inline">\(K_3\)</span>, o como un ciclo de longitud 3 <span class="math inline">\(C_3\)</span>, conocido como triángulo.</p>
 </div>
 </div>
-<p>Se considera ahora un <span class="math inline">\(K_6\)</span>, que tiene un total de 15 aristas. Si se colorean las aristas con rojo o verde dependiendo de si las personas representadas por los vértices incidentes son conocidas o desconocidas entre sí, respectivamente, el <strong>teorema de la amistad</strong> establece lo siguiente:</p>
+<p>Se considera ahora un <span class="math inline">\(K_6\)</span>, que tiene un total de 15 aristas. Si se colorean las aristas con rojo o verde dependiendo de si las personas representadas por los vértices incidentes son conocidas o desconocidas entre sí, respectivamente, el <em>teorema de la amistad</em> establece lo siguiente:</p>
+<blockquote class="blockquote">
 <p>Independientemente de cómo se coloreen las aristas de <span class="math inline">\(K_6\)</span> con rojo o verde, siempre habrá un triángulo rojo, es decir, un conjunto de tres personas que son mutuamente desconocidas, o un triángulo verde, que representa tres personas que se conocen entre sí.</p>
-<p><strong>Demostración</strong></p>
-<p>Se elige uno de los vértices <span class="math inline">\(P\)</span>. Se encuentran 5 aristas incidentes sobre <span class="math inline">\(P\)</span>, cada una coloreada con color rojo (desconocidos) o verde (conocidos). Se aplica el <strong>Principio del Palomar</strong> que afirma que, al menos, 3 aristas son del mismo color.</p>
-<p><img src="assets/Imagen1.svg" class="img-fluid"></p>
-<p><img src="assets/Teorema_amistad_2.svg" class="img-fluid"></p>
-<p>Sean <span class="math inline">\(A,B,C\)</span> los otros vértices de estas 3 aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas <span class="math inline">\(AB,AC,BC\)</span> es roja, junto a las aristas incidentes sobre <span class="math inline">\(P\)</span> se encuentra el triángulo rojo (personas desconocidas entre sí). Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde <span class="math inline">\(ABC\)</span> (personas mutuamente conocidas).</p>
-<p><img src="assets/imagen3.svg" class="img-fluid"></p>
-<p><img src="assets/Imagen4.svg" class="img-fluid"></p>
+</blockquote>
+<div id="thm-seis-desconocidos" class="theorem">
+<p><span class="theorem-title"><strong>Teorema 1</strong></span> Cualquier coloración de <span class="math inline">\(K_6\)</span> con dos colores tiene al menos un triángulo (<span class="math inline">\(C_3\)</span>) cuyos lados son del mismo color.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Prueba</em>. </span>Se elige uno de los vértices <span class="math inline">\(P\)</span> de <span class="math inline">\(K_6\)</span>. Existen cinco aristas incidentes sobre <span class="math inline">\(P\)</span>.</p>
+<p><img src="assets/Imagen1.svg" class="img-fluid" style="width:30.0%"></p>
+<p>Cada una de estas aristas está coloreada con color rojo (desconocidos) o verde (conocidos). Aplicamos el <em>Principio del Palomar</em> que nos asegura que, al menos, tres aristas son del mismo color.</p>
+<p><img src="assets/Teorema_amistad_2.svg" class="img-fluid" style="width:30.0%"></p>
+<p>Sean <span class="math inline">\(A,B,C\)</span> los otros vértices opuestos a <span class="math inline">\(P\)</span> de estas tres aristas del mismo color, supongamos que son de color rojo. Si alguna de las aristas <span class="math inline">\(AB,AC,BC\)</span> es roja, junto a las aristas incidentes sobre <span class="math inline">\(P\)</span> se encuentra el triángulo rojo (personas desconocidas entre sí).</p>
+<p><img src="assets/Imagen4.svg" class="img-fluid" style="width:30.0%"></p>
+<p>Si ninguna de las 3 aristas anteriores es roja, se tiene que las 3 son verdes obteniendo un triángulo de color verde <span class="math inline">\(ABC\)</span> (personas mutuamente conocidas).</p>
+<p><img src="assets/imagen3.svg" class="img-fluid" style="width:30.0%"></p>
+</div>
+<p>En la siguiente aplicación, pulsa “Recalcular” para colorear los lados de forma aleatoria en rojo y azul.</p>
 <div id="ggbApplet">
 
 </div>
 <script>
 var parameters = {
 "id": "ggbApplet",
-"width":900,
-"height":702,
+"width":600,
+"height":500,
 // use this instead of ggbBase64 to load a material from geogebra.org
 // "material_id":12345,
 // "ggbBase64":"",
 // use this instead of ggbBase64 to load a .ggb file
-"filename":"assets/geogebra/hueso-nazari-tesela.ggb"};
+"filename":"assets/conocidos-desconocidos.ggb"};
 // is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, PV=Python, macro=Macro View
-var views = {'is3D': 0,'AV': 1,'SV': 1,'CV': 1,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+var views = {'is3D': 0,'AV': 0,'SV': 1,'CV': 1,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
 var applet = new GGBApplet(parameters, '5.0',views); //poner views como tercer argumento si queremos habilitarlo
 window.onload = function() {
     applet.inject('ggbApplet')  
@@ -227,7 +241,6 @@ window.onload = function() {
 </script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
