@@ -22,7 +22,7 @@ Queremos probar el siguiente enunciado, conocido como el *teorema de la amistad*
 
 ::: {.callout-note}
 
-Es útil abordar este problema con la terminología de grafos. Se considera un grafo con 6 vértices, donde cada vértice es una persona distinta, y los segmentos que los unen son las relaciones entre ellos. A este tipo de grafo se le conoce como grafo completo. En particular, cuando un grafo tiene $n$ vértices y cada par de vértices está conectado, se le denota como $K_n$.
+Es útil abordar este problema con la terminología de grafos (tal y como se sugiere en esta [entrada](https://es.wikipedia.org/wiki/Teorema_de_la_amistad) de [wikipedia](https://es.wikipedia.org/)). Se considera un grafo con seis vértices, donde cada vértice es una persona distinta, y los segmentos que los unen son las relaciones entre ellos. A este tipo de grafo se le conoce como grafo completo. En particular, cuando un grafo tiene $n$ vértices y cada par de vértices está conectado, se le denota como $K_n$.
 
 :::
 
